@@ -42,7 +42,8 @@ body {
   font-size: 130%;
   font-family: calluna, Calluna, Georgia;
   background-image: url("https://images2.alphacoders.com/688/68870.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   font-weight: 300;
   line-height: 1.55em;
