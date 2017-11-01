@@ -92,14 +92,21 @@ h5 {
 
 p {
   margin: 0.5em 0 2.5em;
+  display: inline;
 }
 
-a         { color: #00a;
-display: inline; }
-a:hover   { color: #000;
-display: inline;}
-a:visited { color: #a0a; 
-display: inline;}
+a         {
+  color: #00a;
+display: inline; 
+}
+a:hover   { 
+  color: #000;
+display: inline;
+}
+a:visited { 
+  color: #a0a; 
+display: inline;
+}
 
 
 blockquote {
