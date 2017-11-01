@@ -43,6 +43,7 @@ body {
   font-family: calluna, Calluna, Georgia;
   background-image: url("http://wallup.net/wp-content/uploads/2015/12/154171-nature-landscape-mountain-Nexus_5.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   font-weight: 300;
   line-height: 1.55em;
   padding: 0 2em;
