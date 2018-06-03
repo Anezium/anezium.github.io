@@ -11,19 +11,17 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
-  
-  {
+particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 241,
+      "value": 80,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#27de7d"
+      "value": "#ffffff"
     },
     "shape": {
       "type": "circle",
@@ -63,8 +61,8 @@ particlesJS('particles-js',
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#1d5c3b",
-      "opacity": 0.625330703737554,
+      "color": "#ffffff",
+      "opacity": 0.4,
       "width": 1
     },
     "move": {
@@ -86,8 +84,8 @@ particlesJS('particles-js',
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "bubble"
+        "enable": true,
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
@@ -97,7 +95,7 @@ particlesJS('particles-js',
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 140,
         "line_linked": {
           "opacity": 1
         }
@@ -122,4 +120,4 @@ particlesJS('particles-js',
     }
   },
   "retina_detect": true
-}
+});
