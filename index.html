@@ -55,7 +55,30 @@ particlesJS.load('particles-js','particlesjs.json', function(){
 });
  
 </script>
+<nav class="sidebar" style="width:30%">
+<div class="sidebar">
+  <a href="javascript:void(0)" onclick="closeSidebar()"
+  class="sidebarx">X</a>
+    <div class="side-padding-large side-center">
+      <img class="w3-circle" src="kotori.jpg" alt="avatar">
+   </div>
+  </div>
+<a class="w3-bar-item w3-button" href="#Home">Home</a> 
+<a class="w3-bar-item w3-button" href="streaming.html">Streaming</a> 
+<a class="w3-bar-item w3-button" href="torrents.html">Torrents</a> 
+<a class="w3-bar-item w3-button" href="ddl.html">DDL</a> 
+<a class="w3-bar-item w3-button" href="applications.html">Applications</a> 
+</nav>
 
+<script>
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 <!-- stats.js -->
 <script src="js/lib/stats.js"></script>
