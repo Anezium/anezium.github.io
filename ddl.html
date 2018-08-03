@@ -2,128 +2,66 @@
 	<head>
 		<title>Monstreboss's Site</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		
 		<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-li {
-    float: left;
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #111;
-}
 			body {
-    font-family: "Lato", sans-serif;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-
-</head>
-<head>
-<ul>
- <li>
-  <a href="#" onclick="openNav()">
-    <svg width="20" height="20" id="icoOpen">
-        <path d="M0,5 30,5" stroke="#000" stroke-width="2"/>
-        <path d="M0,12 30,12" stroke="#000" stroke-width="2"/>
-        <path d="M0,20 30,20" stroke="#000" stroke-width="3"/>
-    </svg>
-  </a>
-</li>
-  	 <li><a href="index.html" target="_self" class="active" style="color: #7b00ff">Home</a></li>
- 		 <li><a href="streaming.html" target="_self" style="color: #00ffec">Streaming</a></li>
- 		 <li><a href="torrents.html" target="_self" style="color: #00ffec">Torrents</a></li>
-		  <li><a href="ddl.html" target="_self" style="color: #00ffec">DDL</a></li>
-		 <li><a href="applications.html" target="_self" style="color: #00ffec">Applications</a></li>
-<li><a href="adblocker.html" target="_self" style="color: #00ffec">Adblocker</a></li>
-</ul>
-	
-<div id="sideNavigation" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#home">Home</a>
-  <a href="streaming.html">Streaming</a>
-  <a href="torrents.html">Torrents</a>
-  <a href="ddl.html">DDL</a>
-  <a href="applications.html">Applications</a>
-  <a href="adblocker.html">Adblocker</a>
-</div>
+    				font-family: calluna, Calluna, Georgia;
+				}
+		
+		</style>
+	</head>
+	<head>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
  
-</head>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+ 	</button>
+		
+  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	  
+	  
+ 		<div class="navbar-nav">
+	 
+      <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="streaming.html" target="_self" style="color: #00ffec" >Streaming</a>
+      <a class="nav-item nav-link" href="torrents.html" target="_self" style="color: #00ffec" >Torrents</a>
+      <a class="nav-item nav-link disabled" href="ddl.html" target="_self" style="color: #00ffec" >DDL</a>
+   	  <a class="nav-item nav-link disabled" href="applications.html" target="_self" style="color: #00ffec" >Applications</a>	
+	  <a class="nav-item nav-link disabled" href="adblocker.html" target="_self" style="color: #00ffec" >Adblocker</a>
+		</div>
+ 	 </div>
+	</nav>
+ 
+	</head>
+
 <div id="main">
 
 </div>
-<body>
 
-<script>
-function openNav() {
-    document.getElementById("sideNavigation").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
- 
-function closeNav() {
-    document.getElementById("sideNavigation").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-	</script>
-	</head>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	
-	
+		<br>
 	<h1><strong>Sites de téléchargement direct (DDL) :</strong></h1>
+		<br>
+	
 	<h2>-En Français :</h2>
+	
 			<p>Zone-Téléchargement (généraliste) : </p> <a href="https://ww2.zone-telechargement1.com/" target="_blank">https://ww2.zone-telechargement1.com/</a>
 			<br>
 			<p>Extreme Download (généraliste) : </p> <a href="https://www.extreme-down.pro/home.html" target="_blank">https://www.extreme-down.pro/home.html</a>
 			<br>
 			<p>Wawacity (généraliste) : </p> <a href="https://wawacity.ec/" target="_blank">https://wawacity.ec/</a>
 			<br>
-<p>LibertyVF (généraliste) :</p> <a href="https://libertyvf.net" target="_blank">https://libertyvf.net</a>
-<br>
+			<p>LibertyVF (généraliste) :</p> <a href="https://libertyvf.net" target="_blank">https://libertyvf.net</a>
+			<br>
+	
 	<h2>-Autres :</h2>
-	                <p>Hikarinoakariost (Ost d'animes) :</p> <a href="http://hikarinoakariost.info/" target="_blank">http://hikarinoakariost.info/</a>
+	
+	        <p>Hikarinoakariost (Ost d'animes) :</p> <a href="http://hikarinoakariost.info/" target="_blank">http://hikarinoakariost.info/</a>
 			<br>
 			<p>HDEncode (films uniquement):</p> <a href="https://hdencode.com/" target="_blank">https://hdencode.com/</a>
 			<br>
