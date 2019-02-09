@@ -343,9 +343,7 @@ body {
   height: 100vh;
   overflow: hidden;
   display: flex;
-  font-family: 'Anton', sans-serif;
-  justify-content: center;
-  align-items: center;
+
 }
 
 $shooting-time: 3000ms;
