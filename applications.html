@@ -31,6 +31,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          
           <li class="nav-item">
             <a class="nav-link" href="streaming.html">Streaming</a>
           </li>
@@ -46,9 +47,15 @@
           <li class="nav-item">
             <a class="nav-link" href="adblocker.html">Adblocker</a>
           </li>
+          <li class="nav-item">
+            <div style="position:relative; right:-30px;" class="nav-link custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="darkSwitch"/>
+              <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+            </div>
+          </li>
+        </ul>
       </div>
-      </li>
-      </ul>
+      
     </div>
     </div>
   </nav>
@@ -131,6 +138,7 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
+  <script src="js/dark-mode-switch.min.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
