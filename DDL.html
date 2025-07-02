@@ -184,3 +184,51 @@
 </body>
 
 </html>
+
+<script>
+function checkLinkStatus(url, elementId) {
+  fetch(url, { method: 'HEAD', mode: 'no-cors' })
+    .then(response => {
+      let statusText = " (Inconnu)";  // Default text
+      if (response.ok) {
+        statusText = " (OK)";
+      } else if (response.status >= 400 && response.status < 600) {
+        statusText = " (Probable HS)"; // HTTP error status codes
+      }
+      // Update HTML with status
+      const element = document.getElementById(elementId);
+      if (element) {  // Check if element exists
+        element.textContent += statusText;
+      } else {
+        console.error("Element with ID '" + elementId + "' not found.");
+      }
+    })
+    .catch(error => {
+      console.error("Error checking " + url + ": " + error);
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.textContent += " (Erreur)";
+      } else {
+        console.error("Element with ID '" + elementId + "' not found.");
+      }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Example usage (Adapt these to match your HTML element IDs)
+  checkLinkStatus("https://matthieuev.github.io/Zt-url-api/goto", "zt-lien");
+  checkLinkStatus("https://www.wawacity.ing/", "wawa-lien");
+  checkLinkStatus("https://darki.world/", "darki-lien");
+  checkLinkStatus("https://psa.wf/", "psa-lien");
+  checkLinkStatus("https://lightdl.xyz", "lightdl-lien");
+  checkLinkStatus("https://dramaday.me/", "dramaday-lien");
+  checkLinkStatus("https://forum.mobilism.org/viewforum.php?f=398", "mobilism-lien");
+  checkLinkStatus("https://razengan.club/", "razengan-lien");
+  checkLinkStatus("https://discord.com/invite/CqME4VWUnD", "tsundere-lien");  
+  checkLinkStatus("https://kaerizaki-fansub.com/", "kaerizaki-lien");
+  // ... Add more calls to checkLinkStatus for other links ...
+  checkLinkStatus("https://annas-archive.org/", "annas-archive-lien"); 
+  checkLinkStatus("https://forum.gfxdomain.net/", "gfxdomain-lien");
+  checkLinkStatus("https://www.downloadpirate.com/", "downloadpirate-lien");
+});
+</script>
