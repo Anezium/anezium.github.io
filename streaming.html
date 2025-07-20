@@ -21,7 +21,43 @@
 <body>
 
 
-  <div id="navbar"></div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <div class="row">
+        <a href="index.html">
+          <img class="navbar-brand" alt="logo" style="position: absolute; margin-left: -10px; top: 0%;" src="Anezium.gif" height="60" width="130"/>
+        </a>
+      </div>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="streaming.html">Streaming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="torrents.html">Torrents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="DDL.html">DDL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="applications.html">Applications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="adblocker.html">Adblocker</a>
+          </li>
+          <li class="nav-item">
+            <div style="position:relative; right:-30px;" class="nav-link custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="darkSwitch"/>
+              <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Page Content -->
   <div class="container">
@@ -96,16 +132,6 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      fetch("partials/navbar.html")
-        .then((res) => res.text())
-        .then((html) => {
-          document.getElementById("navbar").innerHTML = html;
-        })
-        .catch((err) => console.error("Erreur chargement navbar :", err));
-    });
-  </script>
   <script src="js/dark-mode-switch.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
