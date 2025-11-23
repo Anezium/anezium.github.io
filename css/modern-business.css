@@ -123,6 +123,11 @@ body {
 
 .card-body {
     padding: 1.5rem;
+    color: var(--text-muted);
+}
+
+.card-body li {
+    color: var(--text-muted);
 }
 
 .card-text {
