@@ -5,35 +5,32 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Anezium - Votre portail pour le streaming, torrents, DDL et applications.">
   <link rel="icon" type="image/gif" href="Shintaro_PP_Edited.gif">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Anezium">
 
-  <title>Anezium's website</title>
+  <title>AdBlocker - Anezium</title>
 
-
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
   <link href="css/modern-business.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <div class="row">
-        <a href="index.html">
-          <img class="navbar-brand" alt="logo" style="position: absolute; margin-left: -10px; top: 0%;" src="Anezium.gif" height="60" width="130"/>
+        <a class="navbar-brand" href="index.html">
+            <img src="Anezium.gif" alt="Anezium Logo">
         </a>
-      </div>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="streaming.html">Streaming</a>
           </li>
@@ -47,44 +44,47 @@
             <a class="nav-link" href="applications.html">Applications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="adblocker.html">Adblocker</a>
-          </li>
-          <li class="nav-item">
-            <div style="position:relative; right:-30px;" class="nav-link custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="darkSwitch"/>
-              <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-            </div>
+            <a class="nav-link active" href="adblocker.html">Adblocker</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Page Header -->
+  <header class="py-5 border-bottom mb-4" style="background: linear-gradient(rgba(15, 15, 18, 0.8), var(--bg-body)), url('wp1.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+      <div class="text-center my-5">
+        <h1 class="fw-bolder text-white">AdBlocker</h1>
+        <p class="lead mb-0 text-white-50">Bloquez les publicités et trackers</p>
+      </div>
+    </div>
+  </header>
 
+  <!-- Page Content -->
   <div class="container">
 
-    <h1 class="mt-4 mb-3">AdBlocker</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">AdBlocker</li>
+      </ol>
+    </nav>
 
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="breadcrumb-item active">AdBlocker</li>
-    </ol>
-
-
-
+    <div class="row g-4">
+      <div class="col-lg-6">
         <div class="card h-100">
-          <h4 class="card-header">Extensions</h4>
+          <div class="card-header">Extensions</div>
           <div class="card-body">
             <p>uBlock Origin : <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=fr" target="_blank">Chrome</a> <a href="https://addons.mozilla.org/fr/firefox/addon/ublock-origin/" target="_blank">Firefox</a>  </p>
             <p>Twitch VOD Downloader : <a href="https://chromewebstore.google.com/detail/twitch-vod-downloader/gaabmdjigfcnkgeommfpnoinpdmpfhaj?hl=en" target="_blank">Chrome</a></p>
             <p>SponsorBlock : <a href="https://sponsor.ajay.app/" target="_blank">https://sponsor.ajay.app/</a></p>
           </div>
         </div>
-<br>
+      </div>
+      <div class="col-lg-6">
         <div class="card h-100">
-          <h4 class="card-header">Scripts</h4>
+          <div class="card-header">Scripts</div>
           <div class="card-body">
             <p>TamperMonkey (Script Manager) : <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank">Chrome</a> <a href="https://addons.mozilla.org/fr/firefox/addon/tampermonkey/" target="_blank">Firefox</a> </p>
 
@@ -94,22 +94,22 @@
             
         </div>
       </div>
+      </div>
+    </div>
     <!-- /.row -->
 
   </div>
   <!-- /.container -->
-<br><br><br><br><br><br><br>
+
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer>
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Mon site 2k19 | Old logo by @Anto</p>
+      <p class="m-0 text-center text-muted">Copyright &copy; Anezium 2025</p>
     </div>
-    <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="js/dark-mode-switch.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
